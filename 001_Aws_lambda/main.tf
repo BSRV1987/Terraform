@@ -14,8 +14,8 @@ terraform {
 }
 
 provider "aws" {
-    access_key="paste or use variables"
-    secret_key="paste or use variables"
+    access_key="AKIA5SMXRGQEHUWMNZHL"
+    secret_key="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"
     region="us-east-1"
 
 }
