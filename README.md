@@ -1,5 +1,6 @@
 # Terraform
-
+# please paste access key and value in main.tf file.
+=======
 # sample challange to decode hexadecimal input and run the code through terraform aws function
 
 Write a Python lambda function that takes as input an event:
@@ -93,3 +94,4 @@ output:
  "state": "discharge",
  "state_of_charge": 99.5,
  "temperature": 26.0
+
