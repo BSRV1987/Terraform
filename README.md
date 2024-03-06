@@ -1,9 +1,10 @@
 # Terraform
 # please paste access key and value in main.tf file.
 =======
-# sample challange to decode hexadecimal input and run the code through terraform aws function
+# sample code to decode hexadecimal input and run the code through terraform aws function
 
-Write a Python lambda function that takes as input an event:
+input is an example battery sensor data that is encoded
+Written a Python lambda function that takes as input an event:
 {
  "device": string,
  "payload": string
@@ -17,7 +18,7 @@ and logs the data to stdout in the following format:
  "temperature": float
 }
 2). Terraform
-Deploy the lambda function using Terraform
+Deployed the lambda function using Terraform
 Encoding
 The data is transmitted as a hexadecimal string. Every payload consists of 8 bytes. Due to space optimization, the information is not byte aligned. 
 A field can start in the middle of a byte. We therfore need bit operations to decode the payload. The payload is not signed and encoded in little 
