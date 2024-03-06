@@ -1,5 +1,5 @@
 # Terraform
-# please paste access key and value in main.tf file.
+# If you are to use this solution , use your own aws keys and paste access key and value in main.tf file.
 =======
 # sample code to decode hexadecimal input and run the code through terraform aws function
 
