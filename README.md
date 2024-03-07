@@ -1,7 +1,7 @@
 # Terraform
 # If you are to use this solution , use your own aws keys and paste access key and value in main.tf file.
 =======
-# sample code to decode hexadecimal input and run the code through terraform aws function
+# Problem Statement 
 
 input is an example battery sensor data that is encoded <br>
 Written a Python lambda function that takes as input an event:<br>
