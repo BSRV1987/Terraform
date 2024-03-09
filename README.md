@@ -24,30 +24,9 @@ The data is transmitted as a hexadecimal string. Every payload consists of 8 byt
 A field can start in the middle of a byte. We therfore need bit operations to decode the payload. The payload is not signed and encoded in little <br>
 Endian.<br>
 
-The following table describes the data fields contained in the payload and their bit positions.<br>
-0 7 6 5 4 3 2 1 0<br>
-7 6 5 4 3 2 1 0<br>
-time type<br>
-1 15 14 13 12 11 10 9 8<br>
-7 6 5 4 3 2 1 0<br>
-time<br>
-2 23 22 21 20 19 18 17 16<br>
-7 6 5 4 3 2 1 0<br>
-time<br>
-3 31 30 29 28 27 26 25 24<br>
-7 6 5 4 3 2 1 0<br>
-time<br>
-4 39 38 37 36 35 34 33 32<br>
-7 6 5 4 3 2 1 0<br>
-state time<br>
-5 47 46 45 44 43 42 41 40<br>
-7 6 5 4 3 2 1 0<br>
-state of charge<br>
-6 55 54 53 52 51 50 49 48<br>
-7 6 5 4 3 2 1 0<br>
-battery temperature<br>
-7 63 62 61 60 59 58 57 56<br>
-7 6 5 4 3 2 1 0<br>
+The following sentence describes the data fields contained in the payload and their bit positions. 8 BYTES=64 BITS<br>
+****type 0-4 BITS , time 4-43 BITS , STATE 44-47 , STATEOFCHARGE 48-55 , BATTERY TEMPERATURE 56-63****
+ 
 For instance, type is encoded on 4 bits in the first byte. state of charge is encoded on 8 bits (1 byte) on the 6th byte.<br>
 Time<br>
 time represents the timestamp of the data. It is defined in seconds since UNIX epoch.<br>
